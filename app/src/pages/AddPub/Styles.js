@@ -1,0 +1,81 @@
+import {StyleSheet} from 'react-native';
+
+export default StyleSheet.create({
+  Scroll: {
+    height: '100%',
+  },
+  Container: {
+    backgroundColor: '#F5F6FA',
+    alignItems: 'center',
+    height: '100%',
+  },
+  imgContainer: {
+    height: 200,
+    width: '80%',
+    marginTop: '5%',
+    borderRadius: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#A8AFB9',
+  },
+  img: {
+    width: '100%',
+    height: '100%',
+    borderRadius: 20,
+    position: 'absolute',
+    zIndex: 2,
+  },
+  Label: {
+    width: '80%',
+    height: 54,
+    padding: 5,
+    marginTop: 20,
+    borderWidth: 2,
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: '#a8afb9',
+    justifyContent: 'center',
+  },
+  Input: {
+    width: '90%',
+    fontSize: 18,
+  },
+  InputDescription: {
+    width: '90%',
+    fontSize: 18,
+    height: 100,
+    padding: 5,
+  },
+  Description: {
+    width: '80%',
+    height: 100,
+    padding: 5,
+    marginTop: 20,
+    borderWidth: 2,
+    borderRadius: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    borderColor: '#a8afb9',
+    justifyContent: 'center',
+  },
+  Icon: {
+    padding: 5,
+    color: '#313131',
+    fontSize: 30,
+  },
+  Button: {
+    width: '80%',
+    height: 50,
+    backgroundColor: '#FF860D',
+    borderRadius: 10,
+    margin: 20,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  TextBtn: {
+    fontSize: 25,
+    color: '#fff',
+  },
+});

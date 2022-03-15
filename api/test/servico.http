@@ -1,0 +1,61 @@
+@api = http://localhost:8080/api/v1/servicos
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJJRFVzdWFyaW8iOjgsIm5vbWUiOiJjZWJvbGEiLCJlbWFpbCI6ImNlYm9sYUBlbWFpbC5jb20iLCJpYXQiOjE2MDMyMzI4NjgsImV4cCI6MTYwNTgyNDg2OH0.u3pROJI3YQ0WHiqARzNhBlx-y8HvSCizpW1xHFRTm-U
+
+
+GET {{api}}?page=0
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+
+POST {{api}} HTTP/1.1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Capino Terrenos",
+    "descricao": "Faco trabalho de capinar terrenos em geral",
+    "valor": 500,
+    "contato": "998980808",
+    "estado": "SP",
+    "cidade": "Pompeia",
+    "IDCategoriaServico": 1
+}
+
+###
+
+GET {{api}}/7 HTTP/1.1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+###
+
+PATCH {{api}}/16/notas HTTP/1.1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nota": 5
+}
+
+###
+
+PATCH  {{api}}/14 HTTP/1.1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nome": "Terraplanagem",
+    "descricao": "4 anos de mercado",
+    "valor": 600,
+    "contato": "40028922",
+    "estado": "SP",
+    "cidade": "Ourinhos",
+    "IDCategoriaServico": 1
+}
+
+###
+
+DELETE  {{api}}/14 HTTP/1.1
+Authorization: Bearer {{token}}

@@ -1,0 +1,16 @@
+<TextInput
+        style={Styles.Input}
+        placeholder="Email"
+        keyboardType="email-address"
+        placeholderTextColor="#fff"
+        autoCorrect={false}
+        onChangeText={() => {}}
+      />
+      <TextInput
+        style={Styles.Input}
+        placeholder="Senha"
+        keyboardType="default"
+        placeholderTextColor="#fff"
+        autoCorrect={false}
+        onChangeText={() => {}}
+      />
